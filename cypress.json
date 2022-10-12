@@ -1,0 +1,15 @@
+{
+    "watchForFileChanges":true,
+    "defaultCommandTimeout":5000,
+    "chromeWebSecurity": false ,
+    "reporter":"cypress-mochawesome-reporter",
+    "reporterOptions":{
+        "charts":true,
+        "overwrite":true,
+        "html":true,
+        "json":true,
+        "reportDir":"cypress/reports/html-reports",
+        "embeddedScreenshorts":true
+
+    }
+}

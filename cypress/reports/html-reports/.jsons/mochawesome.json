@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-09-26T08:07:15.583Z",
+    "end": "2022-09-26T08:07:35.795Z",
+    "duration": 20212,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7b4b3e49-f804-4be9-b543-caf5ca5776c9",
+      "title": "",
+      "fullFile": "cypress/integration/automation/assignment practice.js",
+      "file": "cypress/integration/automation/assignment practice.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3b06cc42-147c-4c6f-a0a3-1cc992d0bee1",
+          "title": "SDET assignment",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Task 4",
+              "fullTitle": "SDET assignment Task 4",
+              "timedOut": null,
+              "duration": 1456,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\automation\\\\assignment practice.js\\\\SDET assignment -- Task 4 -- before each hook (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "let Email = 'Aishu@gmailmail.com';\nlet OrderReference = '8885143094';\ncy.get('#contact-link > a').click();\ncy.wait(2000);\ncy.get('#id_contact').select('Customer service').should('have.value', '2');\ncy.get('#email').type(Email);\ncy.wait(1000);\ncy.get('#id_order').type(OrderReference);\ncy.wait(1000);\ncy.get('#fileUpload').should('not.be.disabled').click();\ncy.wait(5000);\ncy.get('#fileUpload').click();\ncy.wait(4000);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://automationpractice.com/index.php\n\nThe response we received from your web server was:\n\n  > 508: Loop Detected\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `SDET assignment`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://automationpractice.com/index.php\n\nThe response we received from your web server was:\n\n  > 508: Loop Detected\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `SDET assignment`\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:159309:84\n    at visitFailedByErr (http://automationpractice.com/__cypress/runner/cypress_runner.js:158675:12)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:159289:13\n    at tryCatcher (http://automationpractice.com/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://automationpractice.com/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://automationpractice.com/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://automationpractice.com/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://automationpractice.com/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://automationpractice.com/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://automationpractice.com/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress\\integration\\automation\\assignment%2520practice.js:102:8)",
+                "diff": null
+              },
+              "uuid": "cea95dc8-8500-4c4a-9fc8-42b59ccb8170",
+              "parentUUID": "3b06cc42-147c-4c6f-a0a3-1cc992d0bee1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cea95dc8-8500-4c4a-9fc8-42b59ccb8170"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1456,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html-reports\\.jsons",
+        "embeddedScreenshorts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

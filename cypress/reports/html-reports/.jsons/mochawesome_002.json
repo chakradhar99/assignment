@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-03T15:00:56.763Z",
+    "end": "2022-10-03T15:02:08.634Z",
+    "duration": 71871,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7ff77024-6bb2-407c-b2be-492ded2e4dd3",
+      "title": "",
+      "fullFile": "cypress/integration/automation/assignment practice.js",
+      "file": "cypress/integration/automation/assignment practice.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3c3371eb-53b8-4b61-9067-f3a43edb9d16",
+          "title": "SDET assignment",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "roufh task 5",
+              "fullTitle": "SDET assignment roufh task 5",
+              "timedOut": null,
+              "duration": 65484,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\automation\\\\assignment practice.js\\\\SDET assignment -- roufh task 5 (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.get('.sf-menu > :nth-child(2) > .sf-with-ul').click();\ncy.get('.first-in-line.first-item-of-tablet-line > .product-container > .left-block > .product-image-container > .product_img_link > .replace-2x').click(); //cy.get('#our_price_display').should('have.value','26.00')\nfor (let n = 0; n <= 3; n++) {\n  cy.get('.icon-plus').click();\n} // selecting Quantity\n//cy.get('.icon-plus').click().click().click().click()\n\ncy.get('.exclusive > span').click();\ncy.get('#quantity_wanted').should('have.value', '5');\ncy.wait(3000);\ncy.get(\"a[title='Proceed to checkout']\").click({\n  force: true\n}); //cy.get('[data-title=\"Unit price\"]').should('have.value','$26.00')\ncy.wait(5000);\ncy.get('#product_price_3_13_0 > .price').should('have.value', '$26.00');\ncy.get('#total_price').should('have.value', '132.00');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `#product_price_3_13_0 > .price`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `#product_price_3_13_0 > .price`, but never found it.\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress\\integration\\automation\\assignment%2520practice.js:176:46)",
+                "diff": null
+              },
+              "uuid": "c17bf520-9b96-4599-9c02-c0831e82ff46",
+              "parentUUID": "3c3371eb-53b8-4b61-9067-f3a43edb9d16",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c17bf520-9b96-4599-9c02-c0831e82ff46"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 65484,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html-reports\\.jsons",
+        "embeddedScreenshorts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

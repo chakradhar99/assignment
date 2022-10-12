@@ -1,0 +1,85 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-09-04T13:58:04.262Z",
+    "end": "2022-09-04T13:58:33.682Z",
+    "duration": 29420,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "659d2be5-f6e0-49d8-8756-8142dd389e47",
+      "title": "",
+      "fullFile": "cypress/integration/automation/template creation.js",
+      "file": "cypress/integration/automation/template creation.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "login test",
+          "fullTitle": "login test",
+          "timedOut": null,
+          "duration": 24857,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://appdev.interakt.ai');\ncy.get('[data-cy=\"input-email-login-page\"]').type('chakradhar.papanaboina@cawstudios.com');\ncy.get('[data-cy=\"input-password-login-page\"]').type('Kiwi@123');\ncy.get('[data-cy=\"btn-submit-login-page\"]').click();\ncy.wait(7000);\ncy.get('.eqHJUa > svg').click(); //flap close button\ncy.get('[data-cy=\"templates\"]').click();\ncy.wait(3000);\ncy.get('[data-cy=\"button-addtemplate-whatsapptemplates-page\"]').click();\ncy.get('[data-cy=\"input-displayname-whatsapptemplates-page\"]').click().type('Template created via cypress 2');\ncy.wait(4000);\ncy.get('[data-cy=\"dropdown\"]').click();\ncy.wait(2000);\ncy.get('[data-cy=\"Payment Update\"]').click();\ncy.get('[data-cy=\"dynamic-dropdown-language-whatsapptemplates-page\"]').click();\ncy.get('[data-cy=\"dynamic-dropdown-language-whatsapptemplates-page\"]').click().type('english');\ncy.get('[data-cy=\"English\"]').click();\ncy.wait(2000);\ncy.get('.modal-footer > .btn').click();\ncy.get('.notranslate').click().type('This is a template created via cypress');\ncy.get('.sc-btlduw > .sc-bdnxRM > .sc-gtsrHT').click();\ncy.get(':nth-child(4) > div > .form-control').click().type('Thanks');\ncy.get(':nth-child(2) > .btn').click();\ncy.get('.kiwi-mt2 > :nth-child(3) > .form-control').click().type('user');\ncy.get('.modal-footer > .btn').click();\ncy.get('[style=\"padding-left: 25px; padding-right: 25px; background-color: rgb(39, 131, 81); color: rgb(255, 255, 255); border-radius: 6px; border: none;\"]').click();",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.eqHJUa > svg`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.eqHJUa > svg`, but never found it.\n    at Context.eval (https://appdev.interakt.ai/__cypress/tests?p=cypress\\integration\\automation\\template%2520creation.js:105:6)",
+            "diff": null
+          },
+          "uuid": "16899048-071b-4eff-9331-16a1f09279e6",
+          "parentUUID": "659d2be5-f6e0-49d8-8756-8142dd389e47",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "16899048-071b-4eff-9331-16a1f09279e6"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 24857,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

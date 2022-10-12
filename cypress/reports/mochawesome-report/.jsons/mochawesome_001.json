@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-05T13:01:34.260Z",
+    "end": "2022-09-05T13:05:41.707Z",
+    "duration": 247447,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d94c4825-6091-4283-a191-ae50a6435bc2",
+      "title": "",
+      "fullFile": "cypress/integration/automation/assignment practice.js",
+      "file": "cypress/integration/automation/assignment practice.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1aa5b85c-1161-41f2-8e49-498666b7f7ef",
+          "title": "SDET assignment",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Task 1",
+              "fullTitle": "SDET assignment Task 1",
+              "timedOut": null,
+              "duration": 39082,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').click().type('sum');\ncy.get('.ac_results li.ac_even').contains('Dresses').should('be.visible');\ncy.wait(3000);",
+              "err": {},
+              "uuid": "f4b518e6-6157-41f4-9ad1-9be002e1bab2",
+              "parentUUID": "1aa5b85c-1161-41f2-8e49-498666b7f7ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Task 2",
+              "fullTitle": "SDET assignment Task 2",
+              "timedOut": null,
+              "duration": 28172,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').click().type('sum');\ncy.get('#searchbox > .btn').click();\ncy.wait(3000);\ncy.get('.product_list').contains('Summer').should('be.visible');\ncy.get('.first-in-line.first-item-of-tablet-line > .product-container > .right-block > h5 > .product-name').should('be.visible');\ncy.get(':nth-child(2) > .product-container > .right-block > h5 > .product-name').should('be.visible');",
+              "err": {},
+              "uuid": "7f6f56c9-0626-48cb-9ce7-87c5012cfc92",
+              "parentUUID": "1aa5b85c-1161-41f2-8e49-498666b7f7ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Task 3",
+              "fullTitle": "SDET assignment Task 3",
+              "timedOut": null,
+              "duration": 80310,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.sf-menu > :nth-child(3) > a').click();\ncy.wait(3000);\ncy.get('.product_img_link > .replace-2x').click();\ncy.wait(4000);\ncy.get('#group_1').select('L').should('have.value', '3'); // selecting based on text\n// cy.get('#group_1').select('3').should('have.value','3') // selecting based on value\ncy.get('.exclusive > span').click();",
+              "err": {},
+              "uuid": "985b469a-6a12-4b1a-9765-4843c5a26496",
+              "parentUUID": "1aa5b85c-1161-41f2-8e49-498666b7f7ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Task 4",
+              "fullTitle": "SDET assignment Task 4",
+              "timedOut": null,
+              "duration": 32242,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let Email = 'chakri@reddiffmail.com';\nlet OrderReference = '334567';\ncy.get('#contact-link > a').click();\ncy.wait(3000);\ncy.get('#id_contact').select('Customer service').should('have.value', '2');\ncy.get('#email').type(Email);\ncy.wait(1000);\ncy.get('#id_order').type(OrderReference);\ncy.wait(1000);\ncy.get('#fileUpload').should('not.be.disabled');",
+              "err": {},
+              "uuid": "33db677d-3dc0-4fbc-9ea0-1c97f0c885b3",
+              "parentUUID": "1aa5b85c-1161-41f2-8e49-498666b7f7ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Task 5",
+              "fullTitle": "SDET assignment Task 5",
+              "timedOut": null,
+              "duration": 41622,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.sf-menu > :nth-child(2) > .sf-with-ul').click();\ncy.get('.first-in-line.first-item-of-tablet-line > .product-container > .left-block > .product-image-container > .product_img_link > .replace-2x').click(); //cy.get('#our_price_display').should('have.value','26.00')\nfor (let n = 0; n <= 3; n++) {\n  cy.get('.icon-plus').click();\n} // selecting Quantity\n//cy.get('.icon-plus').click().click().click().click()\n\ncy.get('.exclusive > span').click();\ncy.get('#quantity_wanted').should('have.value', '5');",
+              "err": {},
+              "uuid": "8eddac10-e5ec-44f8-9adb-ddcf114fb264",
+              "parentUUID": "1aa5b85c-1161-41f2-8e49-498666b7f7ef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f4b518e6-6157-41f4-9ad1-9be002e1bab2",
+            "7f6f56c9-0626-48cb-9ce7-87c5012cfc92",
+            "985b469a-6a12-4b1a-9765-4843c5a26496",
+            "33db677d-3dc0-4fbc-9ea0-1c97f0c885b3",
+            "8eddac10-e5ec-44f8-9adb-ddcf114fb264"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 221428,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\mochawesome-report\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
